@@ -1,0 +1,327 @@
+
+@media (max-width: 699px){/*little screen*/
+}
+@media (min-width: 700px){/*big screen*/
+}
+*{
+	-webkit-animation: 1s fadeIn;
+	        animation: 1s fadeIn;
+}
+@-webkit-keyframes fadeIn{
+	from{opacity: 0}
+	to{opacity: 1}
+}
+@keyframes fadeIn{
+	from{opacity: 0}
+	to{opacity: 1}
+}
+#Noticias *{
+	-webkit-transition-duration: .8s;
+	     -o-transition-duration: .8s;
+	        transition-duration: .8s;
+}
+#Noticias button{
+	background-color: rgb(247,147,29);
+	color:white;
+	border: 4px solid rgb(247,147,29);
+	border-radius: 5px;
+	cursor: pointer;
+}
+#Noticias{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	width: 100vw;
+	padding-top: 0!important;
+	padding-right: 0!important;
+	padding-bottom:  0!important;
+	padding-left:  0!important;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+}
+#Noticias.active{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+.noticia{
+	overflow: hidden;
+}
+.noticia h4,.noticia a{
+	text-align: center;
+	width: 100%;
+	display: block;
+	color: inherit;
+	text-decoration: none;
+}
+.noticia p{}
+.noticia img{}
+.noticia div{}
+@media (max-width: 399px){/*mega little*/
+	.noticia p{
+		display: none!important;
+	}
+	.noticia img,.noticia div{
+		display: block;
+		position: relative!important;
+		left: 0!important;
+		margin-left: 0!important;
+		width: 100vw!important;
+		height: auto!important;
+	}
+}
+@media (max-width: 699px){/*little*/
+	.noticia{
+		width: 100%!important;
+		display: inline-block;
+		position: relative;
+		margin-bottom: 5vh;
+	}
+	.noticia h4{}
+	.noticia img{
+		position: relative;
+		width:50vw;
+	}
+	.noticia div p{
+		-webkit-animation-name: slideIn;
+		        animation-name: slideIn;
+		-webkit-animation-duration: 1s;
+		        animation-duration: 1s;
+		display: none;
+		text-align: center;
+	}
+	.noticia div{
+		top: 0;
+		position: absolute;
+		width: 50vw;
+		left:50%;
+		height: 100%;
+	    display: -webkit-flex; /* Safari */
+	    -webkit-align-items: center; /* Safari 7.0+ */
+	    display: -webkit-box;
+	    display: -ms-flexbox;
+	    display: flex;
+	    -webkit-box-align: center;
+	        -ms-flex-align: center;
+	            align-items: center;
+	}
+	.noticia:hover div{
+		width: 100%;
+		left: 0;
+	}
+	.noticia:hover p{
+		display: block;
+	}
+	.noticia:hover img{
+		margin-left: -100%;
+	}
+}
+@media(min-width: 700px){/*big*/
+	.noticia{
+		width: 50%!important;
+		display: inline-block;
+		position: relative;
+		margin-bottom: 4vh;
+	}
+	.noticia h4{}
+	.noticia img{
+		position: relative;
+		width:25vw;
+	}
+	.noticia div p{
+		-webkit-animation-name: slideIn;
+		        animation-name: slideIn;
+		-webkit-animation-duration: 1s;
+		        animation-duration: 1s;
+		display: none;
+		text-align: center;
+	}
+	.noticia div{
+		top: 0;
+		position: absolute;
+		width: 50%;
+		left:50%;
+		height: 100%;
+	    display: -webkit-flex; /* Safari */
+	    -webkit-align-items: center; /* Safari 7.0+ */
+	    display: -webkit-box;
+	    display: -ms-flexbox;
+	    display: flex;
+	    -webkit-box-align: center;
+	        -ms-flex-align: center;
+	            align-items: center;
+	}
+	.noticia:hover div p{
+		display: block;
+	}
+	.noticia:hover div{
+		width: 100%;
+		left: 0;
+		position: relative;
+	}
+	.noticia:hover p{
+		display: block;
+	}
+	.noticia:hover img{
+		margin-left: -100%;
+		position: absolute;
+	}
+}
+#wp-link{
+	display: block;
+	font-size: 2em;
+	padding-left: 5vw;
+	padding-right: 5vw;
+	margin-bottom: 5vh;
+}
+#wp-link a{
+	color: rgb(247,147,29);
+	font-weight: bold;
+}
+.socialIcons div{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+@media (max-width: 699px){/*little screen*/
+	.socialIcons{}
+	.socialIcons h3.orange{
+		font-size: 12vw;
+		padding-left: 12vw;
+		margin-bottom: 0px;
+	}
+	.socialIcons div{
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+	}
+	.socialIcons a{
+		-webkit-box-flex: 1;
+		    -ms-flex-positive: 1;
+		        flex-grow: 1;
+		color: white;
+		text-align: center;padding: .7em;
+		font-size: 1.2em;
+	}
+	.socialIcons a:nth-child(1){background-color:aqua}
+	.socialIcons a:nth-child(2){background-color:#5691ef}
+	.socialIcons a:nth-child(3){background-color:#da47ff}
+	.socialIcons a:nth-child(4){background-color:aqua}
+	.socialIcons a:nth-child(5){background-color:red}
+}
+@media (min-width: 700px){/*big screen*/
+	.socialIcons{
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		background-color: rgb(247,147,29);
+		color: white;
+		margin-top: 10vh;
+	}
+	.socialIcons h3{
+		margin:0;
+		padding: 2vh;
+		width: 50%;
+		font-size: 6vh;
+	}
+	.socialIcons div{
+		width: 50%;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+	}
+	.socialIcons a{
+		padding: 1em;
+		-webkit-box-flex: 1;
+		    -ms-flex-positive: 1;
+		        flex-grow: 1;
+		font-size: 6vh;
+		padding:2vh;
+		color: inherit;
+		text-align: center;
+		background-color: rgb(28,117,188);
+	}
+	.socialIcons a:hover{
+	}
+	.socialIcons a:hover:nth-child(1){background-color:aqua}
+	.socialIcons a:hover:nth-child(2){background-color:#5691ef}
+	.socialIcons a:hover:nth-child(3){background-color:#da47ff}
+	.socialIcons a:hover:nth-child(4){background-color:aqua}
+	.socialIcons a:hover:nth-child(5){background-color:red}
+}
+/*I'll have two number 9s, number 9 large, number 6 with extra dip, number 7, two number 45s, one with cheese and a large soda.*/
+.orange{
+	background-color:  rgb(247,147,29);
+	color:white;
+}
+.blue{
+	background-color: rgb(28,117,188);
+	color:white;
+}
+#anuncioCursos{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	margin-top: 3em;
+	margin-bottom: 2em;
+}
+#anuncioCursos h1{
+	padding: .6em;
+	text-align: center;
+}
+
+div.orange{
+	padding: 1em;
+	display: inline-block;
+	text-align: center;
+}
+div.blue{
+	padding: 1em;
+	display: inline-block;
+	text-align: center;
+}
+@media (max-width: 699px){/*little screen*/
+	#anuncioCursos{
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+	}
+	#anuncioCursos img{
+		display: none;
+	}
+}
+#Contacto{
+	width: 100vw;
+	padding: 5vw;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+#Contacto form{
+	padding: 5vh;
+	-ms-flex-item-align: center;
+	    -ms-grid-row-align: center;
+	    align-self: center;
+	background-color: rgba(255,255,255,.7);
+	width: 100%;
+}
+#Contacto form fieldset{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
+}
+#Contacto form fieldset input{
+	-webkit-box-flex: 1;
+	    -ms-flex-positive: 1;
+	        flex-grow: 1;
+	margin:1em;
+}
+#Contacto form textarea{
+	width: 100%;
+}
+#Contacto form input[type="submit"]{
+	font-size: 2em;
+}

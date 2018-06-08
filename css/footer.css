@@ -1,0 +1,70 @@
+/*esa cosa pesa y está grande*/
+
+@media(max-width :600px){
+    #Contacto fieldset{
+        width:100%;
+        -webkit-box-orient:vertical;
+        -webkit-box-direction:normal;
+            -ms-flex-direction:column;
+                flex-direction:column;
+    }
+    #Contacto input{
+        display:block;
+    }
+}
+body > footer{
+	background:-webkit-gradient(linear,left top, left bottom,from(#fff),color-stop(#fff),color-stop(#fff),to(#aaa));
+	background:-webkit-linear-gradient(#fff,#fff,#fff,#aaa);
+	background:-o-linear-gradient(#fff,#fff,#fff,#aaa);
+	background:linear-gradient(#fff,#fff,#fff,#aaa);
+	color:black;
+	z-index: 3;
+}
+body > footer a{
+	color: inherit;
+}
+body > footer section{
+	text-align: center;
+	padding: 1em;
+}
+#footerStarter a{text-decoration: underline;}
+#footerStarter{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	display: -webkit-flex;
+	-ms-flex-wrap:wrap;
+	    flex-wrap:wrap;
+	-ms-flex-pack:distribute;
+	    justify-content:space-around;
+}
+#footerStarter > *{
+	text-align: center;
+}
+@media (max-width: 699px){/*little screen*/
+	#footerStarter > *{
+		width: 90%;
+	}
+}
+@media (min-width: 700px){/*big screen*/
+	#footerStarter > br{display: none;}
+	#footerStarter > *{
+		width: 30%;
+	}
+}
+body > footer #copyright{
+	width: 50%;
+	float:left;
+	font-size: 1.5em;
+}
+body > footer #icons{
+	width: 50%;
+	float:right;
+	font-size: 1.5em;
+}
+body > footer #design{
+	width: 100%;
+	clear:both;
+	color: black;
+	font-size: .9em;
+}
